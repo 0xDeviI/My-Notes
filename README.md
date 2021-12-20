@@ -45,8 +45,8 @@ And of course 'My Notes' itself is open source with a [public repository](https:
 
 'My Notes' requires [PHP](https://php.net/) v7+ to run.
 
-1- Install the dependencies and devDependencies and start the server.
-2- Locate your webserver's home location. 
+- 1- Install the dependencies and devDependencies and start the server.
+- 2- Locate your webserver's home location. 
 
 ```bat
 mkdir MyNotes
@@ -70,14 +70,14 @@ Then search for 'localhost' and replace it with your own server accessible ip ad
 - assets/notes/js/editnote.js
 
 After that, it's almost finished. just 2 more steps:
-1- login to your 'MySQL command line' or 'phpmyadmin' and create a database called `my_notes`.
-1- just navigate to http://[your-server-ip]/MyNotes and you should redirect to setup page to setup and install the app. In setup page, enter MySQL information installed on server.
+- 1- login to your 'MySQL command line' or 'phpmyadmin' and create a database called `my_notes`.
+- 2- just navigate to http://[your-server-ip]/MyNotes and you should redirect to setup page to setup and install the app. In setup page, enter MySQL information installed on server.
 > Note: the defualts are:
-Host: `localhost` or `127.0.0.1`
-Port: `3306` which is MySQL port
-Username: `root`
-Password: Does not have a password
-Database Name: `my_notes`.
+- Host: `localhost` or `127.0.0.1`
+- Port: `3306` which is MySQL port
+- Username: `root`
+- Password: Does not have a password
+- Database Name: `my_notes`.
 
 ## License
 
