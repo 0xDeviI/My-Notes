@@ -1,0 +1,106 @@
+/* Google font */
+
+@font-face {
+    font-family: 'IRAN Sans';
+    src: url('../../login/fonts/ttf/IRANSansWeb.ttf');
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* styling paper */
+
+#paper {
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888;
+}
+
+
+/* styling red vertical line */
+
+#paper::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+
+/* styling blue horizontal lines */
+
+#pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+
+/* styling text content */
+
+#content {
+    outline: 0px solid transparent;
+    padding-top: 6px;
+    padding-right: 56px;
+    padding-left: 25px;
+    line-height: 25px;
+    font-family: 'IRAN Sans';
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 19px;
+    word-spacing: 5px;
+}
+
+#textcontent {
+    outline: 0px solid transparent;
+}
+
+h3 {
+    outline: 0px solid transparent;
+    font-family: 'IRAN Sans';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text);
+}
+
+#action_bar {
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+}
+
+
+/* add button rounded green */
+
+button#submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'IRAN Sans';
+}
+
+button#submit:hover {
+    background-color: #408a44;
+}

@@ -1,0 +1,261 @@
+/* Google font */
+
+@font-face {
+    font-family: 'IRAN Sans';
+    src: url('../../login/fonts/ttf/IRANSansWeb.ttf');
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* styling paper */
+
+#paper {
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888;
+}
+
+
+/* styling blue horizontal lines */
+
+#pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+
+/* styling text content */
+
+#content {
+    padding-top: 6px;
+    padding-right: 56px;
+    padding-left: 25px;
+    line-height: 25px;
+    font-family: 'IRAN Sans';
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 19px;
+    word-spacing: 5px;
+}
+
+h3 {
+    font-family: 'IRAN Sans';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4 {
+    font-family: 'IRAN Sans';
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.adminActions {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+}
+
+.adminButton {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(67, 83, 143, .8);
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.adminButton i {
+    font-size: 22px;
+}
+
+.adminButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 120%;
+    text-align: center;
+}
+
+.adminButtons a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 10px auto 0;
+    line-height: 1.15;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3);
+}
+
+.adminButtons a:hover {
+    transform: scale(1.05);
+}
+
+.adminButtons a:nth-child(1) {
+    background-color: #ff5722;
+    transition: opacity .2s ease-in-out .3s, transform .15s ease-in-out;
+}
+
+.adminButtons a:nth-child(2) {
+    background-color: #4CAF50;
+    transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;
+}
+
+.adminButtons a:nth-child(3) {
+    background-color: #f44336;
+    transition: opacity .2s ease-in-out .2s, transform .15s ease-in-out;
+}
+
+.adminButtons a:nth-child(4) {
+    background-color: #03a9f4;
+    transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;
+}
+
+.adminActions a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adminToggle {
+    -webkit-appearance: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
+}
+
+.adminToggle:hover {
+    box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
+}
+
+.adminToggle:checked~.adminButtons a {
+    opacity: 1;
+    visibility: visible;
+}
+
+#tableContainer {
+    width: 70%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'IRAN Sans';
+    font-size: 18px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+}
+
+td.autoWidth {
+    width: 1px;
+    white-space: nowrap;
+}
+
+button#tableActionButtonBlue {
+    background-color: #345e86;
+    border: none;
+    color: white;
+    padding: 4px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'IRAN Sans';
+}
+
+button#tableActionButtonBlue:hover {
+    background-color: #4b76a8;
+}
+
+button#tableActionButtonRed {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 4px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'IRAN Sans';
+}
+
+button#tableActionButtonRed:hover {
+    background-color: #ff5722;
+}
+
+button#tableActionButtonGreen {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 4px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'IRAN Sans';
+}
+
+button#tableActionButtonGreen:hover {
+    background-color: #66bb6a;
+}
