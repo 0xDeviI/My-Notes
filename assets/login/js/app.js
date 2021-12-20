@@ -113,7 +113,7 @@ function singup() {
     if (isValidSignupCondition()) {
         $.ajax({
             type: "POST",
-            url: "http://192.168.1.200/MyNotes/mvc/controller.php",
+            url: "http://localhost/MyNotes/mvc/controller.php",
             data: {
                 method: "signup",
                 name: signUpName.value,
@@ -142,7 +142,7 @@ function signin() {
     if (isValidSigninCondition()) {
         $.ajax({
             type: "POST",
-            url: "http://192.168.1.200/MyNotes/mvc/controller.php",
+            url: "http://localhost/MyNotes/mvc/controller.php",
             data: {
                 method: "signin",
                 username: signInUsername.value,

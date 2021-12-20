@@ -1,9 +1,9 @@
 function showNote(noteId) {
-    window.location.href = "http://192.168.1.200/MyNotes/notes?id=" + noteId;
+    window.location.href = "http://localhost/MyNotes/notes?id=" + noteId;
 }
 
 function editNote(noteId) {
-    window.location.href = "http://192.168.1.200/MyNotes/edit?id=" + noteId;
+    window.location.href = "http://localhost/MyNotes/edit?id=" + noteId;
 }
 
 function showSuccessMessage(title, message) {
@@ -25,7 +25,7 @@ function showFailedMessage(title, message) {
 
 function deleteNote(noteId) {
     $.ajax({
-        url: "http://192.168.1.200/MyNotes/mvc/controller.php",
+        url: "http://localhost/MyNotes/mvc/controller.php",
         type: "POST",
         data: {
             method: "deleteNote",

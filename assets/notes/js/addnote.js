@@ -34,7 +34,7 @@ function submitNote() {
     } else {
         var jsonInfoParsed = JSON.parse(userInfo.innerHTML);
         $.ajax({
-            url: "http://192.168.1.200/MyNotes/mvc/controller.php",
+            url: "http://localhost/MyNotes/mvc/controller.php",
             type: "POST",
             data: {
                 method: "addNote",
