@@ -25,7 +25,7 @@ i used mvc structure to handle requests, created models for users and notes and 
 
 | Name | Image |
 | ------ | ------ |
-| Setup | ![Image](./res/sc1.png =100x100) |
+| Setup | ![](res/sc1.png =100x100) |
 | Account | [![Image](res/sc2.png)] |
 | Add note | [![Image](res/sc3.png)] |
 | Dashboard | [![Image](res/sc4.png)] |
